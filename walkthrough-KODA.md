@@ -93,9 +93,15 @@ walkthrough-YOURNAME.md
 
 ### 🔹 Foothold Method
 
-- What vulnerability did you use to gain access? - Unrestricted file upload vulnerability
-- What was the payload? -
+- What vulnerability did you use to gain access?
+   Unrestricted file upload vulnerability
+
+- What was the payload?
+   Shell.php - 34926 bytes
+   The payload creates an outbound connection, which is trusted, from within the server itself as the file I uploaded is an executable .php file which I am able to execute by navigating to the directory on the server, this triggers the shell as long as I have a listner ready to catch that connection
+
 - Where did you upload it? - 
+
 - What URL did you visit to trigger the reverse shell? - 
 
 ### 🔹 Listener Details
