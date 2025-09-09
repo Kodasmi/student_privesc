@@ -93,7 +93,7 @@ walkthrough-YOURNAME.md
 
 ### 🔹 Foothold Method
 
-- What vulnerability did you use to gain access? - 
+- What vulnerability did you use to gain access? - Unrestricted file upload vulnerability
 - What was the payload? -
 - Where did you upload it? - 
 - What URL did you visit to trigger the reverse shell? - 
