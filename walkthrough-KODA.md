@@ -100,7 +100,8 @@ walkthrough-YOURNAME.md
    Shell.php - 34926 bytes
    The payload creates an outbound connection, which is trusted, from within the server itself as the file I uploaded is an executable .php file which I am able to execute by navigating to the directory on the server, this triggers the shell as long as I have a listner ready to catch that connection
 
-- Where did you upload it? - 
+- Where did you upload it?
+   ../../hackable/uploads/shell.php
 
 - What URL did you visit to trigger the reverse shell? - 
 
