@@ -103,7 +103,8 @@ walkthrough-YOURNAME.md
 - Where did you upload it?
    ../../hackable/uploads/shell.php
 
-- What URL did you visit to trigger the reverse shell? - 
+- What URL did you visit to trigger the reverse shell?
+   http://192.168.0.73/dvwa/hackable/uploads/shell.php
 
 ### 🔹 Listener Details
 
