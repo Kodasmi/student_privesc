@@ -82,8 +82,8 @@ walkthrough-YOURNAME.md
 
 ## 👤 Student Info
 
-- Name: 
-- Date: 
+- Name: Kodasmi
+- Date: 09/09/2025
 - Kali IP: 
 - Metasploitable IP: 
 
