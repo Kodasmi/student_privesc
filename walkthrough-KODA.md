@@ -85,7 +85,7 @@ walkthrough-YOURNAME.md
 - Name: Kodasmi
 - Date: 09/09/2025
 - Kali IP: 192.168.0.201
-- Metasploitable IP: 
+- Metasploitable IP: 192.168.0.73
 
 ---
 
